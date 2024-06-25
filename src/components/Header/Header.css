@@ -1,0 +1,48 @@
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 15px;
+  width: 100%;
+  /* align-items: center; lo comento porque el loguito no encaja*/
+  display: flex;
+  /*justify-content: space-between; crea el espacio entre el logo y las options*/
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#icono-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navegacion {
+  display: flex;
+}
+
+.navegacion a {
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 0.5rem;
+  font-weight: 350; /* Grosor de la letra del header */
+  text-decoration: none;
+}
+
+.navegacion a:hover {
+  background-color: #f3f4f6;
+  color: black;
+}

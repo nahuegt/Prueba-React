@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Header from "./components/Header/Index";
+import PrimerApartado from "./components/Primer Apartado/PrimerApartado";
+import SegundoApartado from "./components/Segundo Apartado/SegundoApartado";
+import TercerApartado from "./components/Tercer Apartado/TercerApartado";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <div className="App">
+      <Header />
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <PrimerApartado
+        imgSrc="src/img/01 principal.jpg"
+        imgAlt="Imagen principal"
+        title="Enhance Your Driving Experience"
+        description="Discover the best car detailing services in town."
+        quoteLink="/quote"
+        quoteText="Request a Quote"
+        appointmentLink="/appointment"
+        appointmentText="Book Now"
+      />
+    </div>
+      <SegundoApartado />
+      <TercerApartado />
+    </div>
+  );
 }
 
-export default App
+export default App;

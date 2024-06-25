@@ -1,0 +1,47 @@
+.ContenidoSecundario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  padding: 15px;
+}
+
+.Columna {
+  width: 30%; /* Set each column to 1/3rd width */
+  padding: 15px; /* Add some padding for spacing */
+  justify-content: center;
+  text-align: center;
+  background-color: #f3f4f6; /* color fondo */
+  border-radius: 16px;
+  background: linear-gradient(to right, #ffffff, rgb(0 0 0 / 0.15));
+  margin-bottom: 30px;
+}
+
+.Columna img {
+  width: 55px;
+  height: 55px;
+}
+
+.Columna h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.Columna p {
+  color: grey;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex; /* Utilizamos flexbox para organizar las columnas */
+  justify-content: space-between; /* Espacio uniforme entre las columnas */
+}
